@@ -1,0 +1,9 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+apt update && apt upgrade
+apt install git -y
+apt install build-essential -y
+apt install libssl-dev -y
+apt install libgmp-dev -y
+azure-functions
