@@ -23,7 +23,9 @@ drive.mount('/content/drive')
 
 !./keyhunt -m bsgs -f tests/130.txt -k 764 -t 96 -s 10 -R -S -l compress -r 342000000000000000000000000000000:349ffffffffffffffffffffffffffffff
 
+!python bsgs130.py
 
+!python address66.py
 
 
 # keyhunt
