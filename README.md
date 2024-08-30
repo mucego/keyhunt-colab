@@ -10,7 +10,9 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 !git clone https://github.com/mucego/keyhunt-azure.git 
+
 %cd keyhunt-azure 
+
 !chmod +x keyhunt
 
 05- after user this comand in new line
