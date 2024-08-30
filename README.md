@@ -1,14 +1,19 @@
 #comando usar no google colab
 
-01- open new notbook
+01- open new notbook usede TPU
 
 02- open line cod
 
 03- copy this comand
 
-from google.colab import drive drive.mount('/content/drive') !git clone https://github.com/mucego/VanBitCrackenRandom2-colab.git %cd keyhunt-azure !chmod +x keyhunt
+from google.colab import drive 
+drive.mount('/content/drive') 
+!git clone https://github.com/mucego/keyhunt-azure.git 
+%cd keyhunt-azure !chmod +x keyhunt
 
 05- after user this comand in new line
+
+!./keyhunt -m bsgs -f tests/130.txt -k 4096 -t 96 -s 10 -R -S -l compress -r 342000000000000000000000000000000:349ffffffffffffffffffffffffffffff
 
 
 # keyhunt
