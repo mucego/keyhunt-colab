@@ -1,3 +1,16 @@
+#comando usar no google colab
+
+01- open new notbook
+
+02- open line cod
+
+03- copy this comand
+
+from google.colab import drive drive.mount('/content/drive') !git clone https://github.com/mucego/VanBitCrackenRandom2-colab.git %cd keyhunt-azure !chmod +x keyhunt
+
+05- after user this comand in new line
+
+
 # keyhunt
 
 Tool for hunt privatekeys for crypto currencies that use secp256k1 elliptic curve
