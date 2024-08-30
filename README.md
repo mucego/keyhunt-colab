@@ -9,9 +9,9 @@
 from google.colab import drive 
 drive.mount('/content/drive')
 
-!git clone https://github.com/mucego/keyhunt-azure.git 
+!git clone https://github.com/mucego/keyhunt-colab.git 
 
-%cd keyhunt-azure 
+%cd keyhunt-colab 
 
 !chmod +x keyhunt
 
@@ -22,6 +22,8 @@ drive.mount('/content/drive')
 
 
 !./keyhunt -m bsgs -f tests/130.txt -k 764 -t 96 -s 10 -R -S -l compress -r 342000000000000000000000000000000:349ffffffffffffffffffffffffffffff
+
+
 
 
 # keyhunt
