@@ -1,6 +1,6 @@
 #comando usar no google colab
 
-01- open new notbook usede TPU
+01- open new notbook used TPU
 
 02- open line cod
 
