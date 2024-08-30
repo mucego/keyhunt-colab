@@ -21,14 +21,14 @@ def load_checkpoint():
             checkpoint_data = pickle.load(f)
         return checkpoint_data['start_keyspace'], checkpoint_data['end_keyspace']
     else:
-        return '35000000000000000', '35fffffffffffffff'
+        return '32000000000000000', '32fffffffffffffff'
 
 def delete_checkpoint():
     if os.path.exists('checkpoint.pkl'):
         os.remove('checkpoint.pkl')
 
 def run_keyhunt(start_keyspace, end_keyspace):
-    command = f'./keyhunt -m address -f tests/66.txt -l compress -M -t 16 -e -s 10 -R -S -r {start_keyspace}:{end_keyspace}'
+    command = f'./keyhunt -m address -f tests/66.txt -l compress -M -t 96 -e -s 10 -R -S -r {start_keyspace}:{end_keyspace}'
     
     # Executa o comando no Colab
     process = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)
@@ -46,10 +46,10 @@ save_interval = 60  # Intervalo de salvamento em segundos (1 minutos)
 while True:
     try:
         # Gera um incremento randômico entre 1e28 e 1e32
-        random_increment = random.randint(0x35000000000000000, 0x35000000000000000)
+        random_increment = random.randint(0x32000000000000000, 0x32000000000000000)
         increment = hex(random_increment)[2:]
 
-        while int(end_keyspace, 16) <= int('35fffffffffffffff', 16):  # Continua até atingir o valor final do keyspace
+        while int(end_keyspace, 16) <= int('32fffffffffffffff', 16):  # Continua até atingir o valor final do keyspace
             run_keyhunt(start_keyspace, end_keyspace)
             start_keyspace = hex(int(end_keyspace, 16) + 1)[2:]  # Incrementa o valor do keyspace inicial
             end_keyspace = hex(int(start_keyspace, 16) + random_increment - 1)[2:]  # Incrementa o valor do keyspace final corretamente
