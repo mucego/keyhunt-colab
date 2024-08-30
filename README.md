@@ -14,7 +14,7 @@ drive.mount('/content/drive')
 
 05- after user this comand in new line
 
-!./keyhunt -m bsgs -f tests/130.txt -k 4096 -t 96 -s 10 -R -S -l compress -r 342000000000000000000000000000000:349ffffffffffffffffffffffffffffff
+!./keyhunt -m bsgs -f tests/130.txt -k 764 -t 96 -s 10 -R -S -l compress -r 342000000000000000000000000000000:349ffffffffffffffffffffffffffffff
 
 
 # keyhunt
