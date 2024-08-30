@@ -7,7 +7,8 @@
 03- copy this comand
 
 from google.colab import drive 
-drive.mount('/content/drive') 
+drive.mount('/content/drive')
+
 !git clone https://github.com/mucego/keyhunt-azure.git 
 %cd keyhunt-azure 
 !chmod +x keyhunt
